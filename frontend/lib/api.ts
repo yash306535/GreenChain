@@ -177,6 +177,60 @@ class ApiService {
   async getRouteAlternatives(shipmentId: string): Promise<ApiResponse<any[]>> {
     return this.request(`/shipments/${shipmentId}/route-alternatives`);
   }
+
+  // ML Insights API
+  async predictCO2(data: any): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/predict-co2', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async detectAnomaly(data: any): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/detect-anomaly', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async getDriverProfile(data: any): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/driver-profile', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async forecastCredits(days: number = 30): Promise<ApiResponse<any>> {
+    return this.request(`/api/ml/forecast-credits?days=${days}`);
+  }
+
+  async recommendRoute(data: any): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/recommend-route', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async fuelWasteRisk(data: any): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/fuel-waste-risk', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async scoreShipment(data: any): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/score-shipment', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async scoreFleet(shipments: any[]): Promise<ApiResponse<any>> {
+    return this.request('/api/ml/score-fleet', {
+      method: 'POST',
+      body: JSON.stringify(shipments),
+    });
+  }
 }
 
 export const apiService = new ApiService();
