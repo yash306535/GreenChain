@@ -1,0 +1,68 @@
+# GreenChain Sustainability Policies — Indian Logistics Fleet
+# One policy per line. Lines starting with # are comments and are ignored.
+
+# ── Emission Benchmarks ───────────────────────────────────────────────────────
+The India national average for road freight emissions is 0.90 kg CO2 per km; all fleet operations must be tracked against this baseline.
+The EU 2030 heavy vehicle CO2 target is 0.55 kg CO2 per km; this is the medium-term fleet average target for GreenChain-managed routes.
+Electric vehicle (EV) trucks on Indian roads currently achieve approximately 0.05 kg CO2 per km including grid emission factor; this is the best-in-class benchmark.
+Electric rail freight achieves approximately 0.015 kg CO2 per km for Indian Railways electrified corridors; rail is the preferred mode for routes exceeding 600 km where service levels allow.
+CNG trucks achieve approximately 0.50–0.55 kg CO2 per km and are the preferred replacement for diesel on short-haul routes under 400 km.
+Any shipment recording CO2 per km above 1.0 kg must be automatically escalated for immediate driver review and route assessment.
+Fleet-wide CO2 per km must be reported weekly; the monthly reduction target is 2% against the prior month rolling average.
+
+# ── Green Score Grading ───────────────────────────────────────────────────────
+Green Score Grade A (score 90–100) indicates exemplary sustainability performance; vehicle type, driver behaviour, and cargo utilisation are all optimised.
+Green Score Grade B (score 75–89) indicates good performance; minor improvements in driver behaviour or load factor could push to Grade A.
+Green Score Grade C (score 60–74) indicates acceptable performance; targeted coaching and load consolidation reviews are recommended.
+Green Score Grade D (score 45–59) indicates poor performance; a formal corrective action plan must be initiated within 48 hours.
+Green Score Grade F (score below 45) indicates critical performance failure; the shipment must be reviewed for immediate intervention and the driver enrolled in coaching.
+Green Score is calculated from four weighted factors: CO2 efficiency vs India baseline (40%), driver behaviour score (30%), vehicle type bonus (20%), and cargo load utilisation (10%).
+EV trucks receive a +10 point vehicle type bonus to their Green Score; trains receive +8; CNG trucks receive +3; diesel trucks receive 0.
+
+# ── Carbon Credits ────────────────────────────────────────────────────────────
+Carbon credit calculation follows Gold Standard Verified Emission Reduction (VER) methodology.
+One carbon credit equals one tonne (1,000 kg) of CO2 avoided compared to the India average baseline of 0.90 kg per km.
+Carbon credits are valued at INR 800 per credit (approximately USD 9.50) for internal reporting and fleet benchmarking.
+Only shipments running below the India baseline of 0.90 kg CO2 per km qualify for positive carbon credit generation.
+Shipments above the 0.90 kg CO2 per km baseline generate a negative credit impact that offsets gains from cleaner vehicles in the fleet.
+A fleet running 80% EV trucks on high-volume corridors can realistically generate INR 50,000 to 100,000 per month in carbon credits.
+Carbon credits should be reported monthly to ESG reporting teams with per-shipment breakdowns and route-level aggregation.
+
+# ── Vehicle Transition Policy ─────────────────────────────────────────────────
+EV trucks are the preferred vehicle type for all short-haul urban and peri-urban routes under 300 km with established charging infrastructure.
+CNG trucks are the recommended diesel replacement for inter-city routes of 300–600 km where EV charging is not yet available.
+Diesel trucks should be phased out on any route where EV or CNG alternatives have been validated with equivalent service levels.
+For routes exceeding 600 km with high cargo density (above 30 tonnes), rail freight should be evaluated as the primary mode.
+Vehicle type upgrades on a lane must be evaluated using the Route Alternatives tool before each contract renewal.
+Leasing partners should be notified 90 days in advance when a lane transitions from diesel to EV or CNG.
+
+# ── Driver Behaviour ──────────────────────────────────────────────────────────
+Driver behaviour score is calculated from three signals: idling time ratio (33%), harsh braking event count per 100 km (33%), and speed consistency against the posted limit (33%).
+Idling for more than 10 consecutive minutes without cargo loading or unloading activity must generate a medium-severity idle alert.
+More than 3 harsh braking events per 100 km in a single shift triggers an automatic driver coaching recommendation.
+Drivers with a behaviour score below 60 for two consecutive weeks must be enrolled in a formal eco-driving programme.
+Speed variance above 25% of the route average sustained for more than 30 minutes must be flagged as an anomaly.
+Top-performing drivers (score 90+) should be recognised monthly in fleet communications to incentivise sustainable behaviour.
+
+# ── Route Optimisation ────────────────────────────────────────────────────────
+Route alternatives must be assessed for every shipment recording a Green Score of D or F.
+When a route alternative reduces predicted CO2 by more than 20%, the recommendation must be escalated to the fleet manager within 4 hours.
+Rail corridor options must be evaluated for all origin-destination pairs with annual freight volume exceeding 500 tonnes.
+Load consolidation should be evaluated for any shipment with cargo utilisation below 60% of vehicle capacity.
+Empty return legs must be tracked and consolidation opportunities flagged using the Route Alternatives tool within 24 hours of delivery completion.
+The Delhi–Mumbai freight corridor has an established rail option (Indian Railways Container Corporation) that reduces CO2 by approximately 97% versus diesel truck.
+
+# ── Alert Thresholds ──────────────────────────────────────────────────────────
+High-severity emission spike alerts are triggered when CO2 per km exceeds 1.0 kg on any single segment reading.
+Medium-severity delay risk alerts are triggered when ETA slips beyond the original delivery window by more than 30 minutes.
+Medium-severity harsh braking alerts are triggered when 5 or more harsh braking events are recorded within a 90-minute window.
+Low-severity idle alerts are triggered when cumulative idling exceeds 12 minutes in any 60-minute period.
+All high-severity alerts must be acknowledged by a fleet manager within 2 hours of creation.
+Unacknowledged high-severity alerts escalate to the sustainability officer after 4 hours.
+
+# ── Reporting and Compliance ──────────────────────────────────────────────────
+Weekly fleet emission reports must include: total CO2 kg, average CO2 per km, number of Grade A/B/C/D/F shipments, and carbon credits earned.
+Monthly ESG reports must include: CO2 reduction percentage vs prior month, cumulative carbon credits, and top 3 emission hotspot routes.
+Emission data must be retained for a minimum of 3 years to support GHG Protocol Scope 3 supply chain audits.
+All CO2 calculations use the IPCC AR6 emission factor of 2.68 kg CO2 per litre of diesel and 2.10 kg CO2 per litre of CNG equivalent.
+EV truck emissions are calculated using the India grid emission factor of 0.82 kg CO2 per kWh multiplied by average energy consumption of 0.62 kWh per km.
