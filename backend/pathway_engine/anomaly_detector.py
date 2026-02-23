@@ -4,8 +4,8 @@ from typing import Any, Dict, List
 
 import pathway as pw
 
-from ..services.supabase_client import get_supabase_client
-from ..services.notification_service import send_push_notification
+from services.supabase_client import get_supabase_client
+from services.notification_service import send_push_notification
 
 
 class TelemetrySchema(pw.Schema):

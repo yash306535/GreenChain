@@ -10,9 +10,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 
-from .services.supabase_client import get_supabase_client
-from .services.gemini_service import init_gemini
-from .pathway_engine.stream_simulator import StreamSimulator
+from services.supabase_client import get_supabase_client
+from services.gemini_service import init_gemini
+from pathway_engine.stream_simulator import StreamSimulator
 
 
 _BACKEND_DIR = Path(__file__).resolve().parent
@@ -158,7 +158,7 @@ app.add_middleware(
 
 # Routers – implemented in their respective modules. We import lazily to
 # avoid circular dependencies during tooling / partial implementation.
-from .routers import (  # noqa: E402
+from routers import (  # noqa: E402
     shipments,
     emissions,
     ai_insights,

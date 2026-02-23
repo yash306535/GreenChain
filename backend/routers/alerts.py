@@ -3,9 +3,9 @@ import logging
 from fastapi import APIRouter, HTTPException
 from fastapi.concurrency import run_in_threadpool
 
-from ..models.alert import Alert, AlertUpdate
-from ..services.postgres_client import pg_fetch_all, pg_execute_returning
-from ..services.local_seed_data import list_alerts, mark_alert_read as mark_alert_read_seed
+from models.alert import Alert, AlertUpdate
+from services.postgres_client import pg_fetch_all, pg_execute_returning
+from services.local_seed_data import list_alerts, mark_alert_read as mark_alert_read_seed
 
 
 logger = logging.getLogger("greenchain.alerts")

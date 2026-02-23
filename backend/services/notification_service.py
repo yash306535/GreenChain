@@ -6,7 +6,7 @@ from typing import List
 from exponent_server_sdk import PushClient, PushMessage, PushServerError
 from requests.exceptions import ConnectionError as RequestsConnectionError
 
-from .supabase_client import get_supabase_client
+from services.supabase_client import get_supabase_client
 
 
 logger = logging.getLogger("greenchain.notifications")

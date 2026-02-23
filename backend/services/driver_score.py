@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from ..models.shipment import DriverScoreBreakdown
+from models.shipment import DriverScoreBreakdown
 
 
 BASE_SCORE = 100.0
