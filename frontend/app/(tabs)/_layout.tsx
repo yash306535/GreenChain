@@ -76,14 +76,27 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="ml"
+        options={{
+          title: 'ML',
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialIcons
+              name={focused ? 'psychology' : 'psychology'}
+              color={color}
+              size={24}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="score"
         options={{
           title: 'Score',
           tabBarIcon: ({ color, focused }) => (
-            <MaterialIcons 
-              name={focused ? 'star' : 'star'} 
-              color={color} 
-              size={24} 
+            <MaterialIcons
+              name={focused ? 'star' : 'star'}
+              color={color}
+              size={24}
             />
           ),
         }}

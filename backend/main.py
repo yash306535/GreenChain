@@ -166,6 +166,7 @@ from routers import (  # noqa: E402
     alerts,
     reports,
     green_score,
+    ml_routes,
 )
 
 
@@ -176,6 +177,7 @@ app.include_router(analytics.router, prefix="/analytics", tags=["analytics"])
 app.include_router(alerts.router, prefix="/alerts", tags=["alerts"])
 app.include_router(reports.router, prefix="/reports", tags=["reports"])
 app.include_router(green_score.router, prefix="/green-score", tags=["green-score"])
+app.include_router(ml_routes.router, prefix="/api/ml", tags=["ml"])
 
 
 @app.get("/health")
