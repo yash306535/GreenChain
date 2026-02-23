@@ -1,24 +1,19 @@
 from __future__ import annotations
 
+import csv
 from io import StringIO
 from typing import Any, List
 
-import pandas as pd
-
 
 def generate_emissions_csv(rows: List[dict[str, Any]]) -> str:
-    """Build a CSV string for emissions joined with shipments if desired.
-
-    rows should already contain the necessary joined fields; this helper just
-    converts them into a CSV string using pandas.
-    """
+    """Build a CSV string for emissions rows using stdlib csv module."""
 
     if not rows:
-        df = pd.DataFrame()
-    else:
-        df = pd.DataFrame(rows)
+        return ""
     buf = StringIO()
-    df.to_csv(buf, index=False)
+    writer = csv.DictWriter(buf, fieldnames=rows[0].keys())
+    writer.writeheader()
+    writer.writerows(rows)
     return buf.getvalue()
 
 
