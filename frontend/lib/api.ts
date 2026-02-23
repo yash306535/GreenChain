@@ -20,7 +20,7 @@ const resolveBackendApiUrl = (): string => {
 
   if (Platform.OS === 'android') {
     // Android emulator cannot reach host localhost directly.
-    return 'http://10.0.2.2:8000';
+    return 'https://greenchain-qfwf.onrender.com';
   }
 
   return 'http://localhost:8000';
