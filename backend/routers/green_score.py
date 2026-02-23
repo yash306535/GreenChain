@@ -3,9 +3,9 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException
 
-from ..models.green_score import GreenScoreBreakdown, FleetGreenScoreEntry
-from ..services.supabase_client import get_supabase_client
-from ..services.local_seed_data import fleet_green_scores, get_shipment, get_shipment_emissions
+from models.green_score import GreenScoreBreakdown, FleetGreenScoreEntry
+from services.supabase_client import get_supabase_client
+from services.local_seed_data import fleet_green_scores, get_shipment, get_shipment_emissions
 
 
 logger = logging.getLogger("greenchain.green_score")

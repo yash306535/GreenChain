@@ -8,7 +8,7 @@ from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from typing import AsyncGenerator, Dict, List
 
-from ..services.supabase_client import get_supabase_client
+from services.supabase_client import get_supabase_client
 
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")

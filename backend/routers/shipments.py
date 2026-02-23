@@ -5,17 +5,17 @@ from fastapi import APIRouter, HTTPException
 from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import JSONResponse
 
-from ..models.shipment import (
+from models.shipment import (
     Shipment,
     ShipmentWithEmissions,
     ShipmentDetailResponse,
     DriverScoreBreakdown,
 )
-from ..services.route_optimizer import generate_route_alternatives
-from ..services.driver_score import compute_driver_score_breakdown
-from ..pathway_engine.predictor import predict_shipment_co2
-from ..services.postgres_client import pg_fetch_all, pg_fetch_one
-from ..services.local_seed_data import (
+from services.route_optimizer import generate_route_alternatives
+from services.driver_score import compute_driver_score_breakdown
+from pathway_engine.predictor import predict_shipment_co2
+from services.postgres_client import pg_fetch_all, pg_fetch_one
+from services.local_seed_data import (
     list_shipments_with_emissions,
     get_shipment,
     get_shipment_emissions,

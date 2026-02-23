@@ -4,9 +4,9 @@ from typing import Any
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse, JSONResponse
 
-from ..services.supabase_client import get_supabase_client
-from ..services.report_generator import generate_emissions_csv, build_fleet_summary
-from ..services.local_seed_data import report_summary
+from services.supabase_client import get_supabase_client
+from services.report_generator import generate_emissions_csv, build_fleet_summary
+from services.local_seed_data import report_summary
 
 
 logger = logging.getLogger("greenchain.reports")

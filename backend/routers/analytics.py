@@ -4,15 +4,15 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException
 
-from ..models.analytics import (
+from models.analytics import (
     FleetOverviewKPIs,
     VehicleComparisonEntry,
     MonthlyTargetProgress,
     ModalShiftOpportunity,
 )
-from ..services.supabase_client import get_supabase_client
-from ..services.carbon_credits import CARBON_CREDIT_PRICE_INR
-from ..services.local_seed_data import fleet_overview as seed_fleet_overview
+from services.supabase_client import get_supabase_client
+from services.carbon_credits import CARBON_CREDIT_PRICE_INR
+from services.local_seed_data import fleet_overview as seed_fleet_overview
 
 
 logger = logging.getLogger("greenchain.analytics")

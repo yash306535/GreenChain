@@ -5,7 +5,7 @@ import math
 import os
 from typing import Any
 
-from ..services.carbon_credits import INDIA_BASELINE_CO2_PER_KM
+from services.carbon_credits import INDIA_BASELINE_CO2_PER_KM
 
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")

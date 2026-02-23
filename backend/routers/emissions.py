@@ -4,14 +4,14 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException, Query
 
-from ..models.emission import (
+from models.emission import (
     EmissionSummary,
     EmissionTrendPoint,
     EmissionLeaderboardEntry,
 )
-from ..services.supabase_client import get_supabase_client
-from ..services.carbon_credits import calculate_carbon_credits
-from ..services.benchmark_service import benchmark_shipment
+from services.supabase_client import get_supabase_client
+from services.carbon_credits import calculate_carbon_credits
+from services.benchmark_service import benchmark_shipment
 
 
 logger = logging.getLogger("greenchain.emissions")

@@ -6,9 +6,9 @@ from typing import Any, Dict
 
 import pathway as pw
 
-from ..services.supabase_client import get_supabase_client
-from ..services.carbon_credits import calculate_carbon_credits, INDIA_BASELINE_CO2_PER_KM
-from ..services.driver_score import BASE_SCORE
+from services.supabase_client import get_supabase_client
+from services.carbon_credits import calculate_carbon_credits, INDIA_BASELINE_CO2_PER_KM
+from services.driver_score import BASE_SCORE
 
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")

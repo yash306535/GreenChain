@@ -5,9 +5,9 @@ from typing import Any, Dict, List
 
 from fastapi import APIRouter, HTTPException
 
-from ..services.supabase_client import get_supabase_client
-from ..services.gemini_service import generate_gemini_response, get_fleet_context
-from ..pathway_engine.rag_index import build_policy_table, search_policies
+from services.supabase_client import get_supabase_client
+from services.gemini_service import generate_gemini_response, get_fleet_context
+from pathway_engine.rag_index import build_policy_table, search_policies
 
 
 logger = logging.getLogger("greenchain.ai")
