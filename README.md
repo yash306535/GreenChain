@@ -128,7 +128,7 @@ cp backend/.env.example backend/.env
 # Edit backend/.env with your actual Supabase and Gemini API keys
 ```
 
-> ⚠️ **Security:** Never commit a real `.env` file or live API keys. The `.env.example` file contains only placeholder values and is safe to track in git. Your `.env` is excluded by `.gitignore`.
+> ⚠️ **Security:** Never commit a real `.env` file or live API keys. The `.env.example` file contains only placeholder values and is safe to track in git. Your `.env` is excluded by `.gitignore`. If any key was ever committed, rotate it immediately in the provider console.
 
 Seed the database and start the server:
 ```bash
