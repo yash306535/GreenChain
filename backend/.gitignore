@@ -1,7 +1,6 @@
-# Environment variables
+# Environment variables (see ../.gitignore for the !.env.example exception)
 .env
 .env.*
-.env.example
 
 # Python
 __pycache__/
