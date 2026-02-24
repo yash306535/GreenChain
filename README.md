@@ -122,12 +122,13 @@ source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Create `backend/.env`:
-```env
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_KEY=your-service-role-key
-GEMINI_API_KEY=your-gemini-api-key
+Copy the example env file and fill in your own credentials:
+```bash
+cp backend/.env.example backend/.env
+# Edit backend/.env with your actual Supabase and Gemini API keys
 ```
+
+> ⚠️ **Security:** Never commit a real `.env` file or live API keys. The `.env.example` file contains only placeholder values and is safe to track in git. Your `.env` is excluded by `.gitignore`.
 
 Seed the database and start the server:
 ```bash
